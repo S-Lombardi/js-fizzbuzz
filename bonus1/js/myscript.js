@@ -34,5 +34,5 @@ for(let i=1 ; i<=100 ; i++) {
     //visualizzo a video nel container i numeri e le stringhe
     document.getElementById("container");
     container.append(cella);
-    
+      
 }
