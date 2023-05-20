@@ -4,10 +4,51 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family:Arial, Helvetica, sans-serif
+}
 #container{
     width: 80%;
     min-height: 400px;
     margin: auto;
     border: 1px dashed blue;
     margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    width: calc(100% / 10);
+    border: 1px solid rgb(221, 221, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.bg-1{
+    background-color: rgb(145, 74, 155);
+    
+}
+
+.bg-2{
+    background-color: rgb(238, 133, 63);
+    
+}
+
+.bg-3{
+    background-color: rgb(209, 84, 75);
+}
+
+.bg-4{
+    background-color: rgb(248, 194, 76);
+    color: rgb(197, 92, 66);
 }
